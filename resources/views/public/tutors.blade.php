@@ -1,0 +1,6 @@
+@extends('layouts.public')
+@section('title','Kenalan dengan Tentor')
+@section('content')
+<section class="page-intro container"><p class="eyebrow">KAKAK TEMAN BELAJAR</p><h1>Menemani mencoba.<br><em>Mendukung bertumbuh.</em></h1><p>Kenali pendamping di balik setiap proses belajar. Penempatan tentor disesuaikan oleh pengelola dengan kebutuhan anak.</p><img class="intro-decoration" src="/elements/flower.webp" alt="" width="100" height="140"></section>
+<section class="container section compact"><div class="tutor-grid">@forelse($tutors as $t)<article class="tutor-card"><div class="tutor-portrait">@if($t->photo)<img src="/foto-tentor/{{ $t->id }}" alt="{{ $t->name }}" width="400" height="400" loading="lazy">@else<img src="/elements/{{ ['book','pencil','flower','sun'][$loop->index%4] }}.webp" alt="" width="220" height="220" loading="lazy">@endif @if($t->is_demo)<span class="demo-label">PROFIL CONTOH</span>@endif</div><p class="eyebrow">{{ $t->subjects }}</p><h2>{{ $t->name }}</h2><p>{{ $t->bio }}</p></article>@empty<div class="empty"><h2>Segera berkenalan.</h2><p>Profil tentor sedang disiapkan. Hubungi admin untuk informasi pendamping belajar.</p></div>@endforelse</div></section>@include('components.cta')
+@endsection

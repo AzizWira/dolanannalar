@@ -1,0 +1,6 @@
+@extends('layouts.public')
+@section('title','Ruang Orang Tua')
+@section('content')
+<section class="container parent-hero"><div><p class="eyebrow">RUANG ORANG TUA</p><h1>Hadir di setiap<br><em>langkah kecilnya.</em></h1><p>Lihat catatan setiap pertemuan, kenali perkembangan anak, dan temukan latihan yang bisa didampingi di rumah.</p><a class="button dark" href="/masuk">Masuk ke akun saya ↗</a><p class="small">Belum punya akun? <a href="/daftar">Daftar dengan email orang tua</a></p><img class="parent-cloud" src="/elements/cloud.webp" alt="" width="100" height="67"></div><img src="/illustrations/ruang-orang-tua.webp" alt="Ilustrasi orang tua mengikuti proses belajar anak" width="900" height="600"></section>
+<section class="container section"><div class="steps"><article><span>01</span><h3>Satu akun untuk keluarga</h3><p>Gunakan email yang sudah dicatat pengelola. Beberapa anak dapat terhubung dengan akun yang sama.</p></article><article><span>02</span><h3>Kenali proses belajarnya</h3><p>Pemahaman, konsentrasi, dan kemampuan mengerjakan soal ditampilkan dari pertemuan ke pertemuan.</p></article><article><span>03</span><h3>Tak ketinggalan kabar</h3><p>Pemberitahuan email akan mengajak Anda membuka website saat tentor menerbitkan pembaruan.</p></article></div></section>
+@endsection
