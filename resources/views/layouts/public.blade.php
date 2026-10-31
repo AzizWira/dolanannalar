@@ -7,7 +7,7 @@
     <meta name="theme-color" content="#174D3C"><link rel="canonical" href="{{ url()->current() }}">
     <meta property="og:title" content="{{ $site['name'] }} — {{ $site['slogan'] }}"><meta property="og:image" content="{{ asset('illustrations/belajar-di-rumah.webp') }}">
     @if(request()->is('masuk','daftar','lupa-password','reset-password/*','verifikasi-email*'))<meta name="robots" content="noindex,nofollow">@endif
-    <link rel="icon" type="image/webp" href="/elements/sun.webp"><link rel="stylesheet" href="/app.css">@vite(['resources/css/app.css','resources/js/app.js'])<script src="/app.js" defer></script>
+    <link rel="icon" type="image/webp" href="/elements/sun.webp"><link rel="stylesheet" href="/app.css?v={{ filemtime(public_path('app.css')) }}">@vite(['resources/css/app.css','resources/js/app.js'])<script src="/app.js?v={{ filemtime(public_path('app.js')) }}" defer></script>
 </head>
 <body>
 <a class="skip" href="#main">Lewati ke isi utama</a>
