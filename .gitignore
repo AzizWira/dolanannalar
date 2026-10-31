@@ -38,3 +38,4 @@ Thumbs.db
 !/storage/app/private/.gitignore
 /storage/app/public/**
 !/storage/app/public/.gitignore
+/storage/framework/*.lock
